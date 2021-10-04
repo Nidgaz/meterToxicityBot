@@ -1,8 +1,10 @@
 // const { Telegraf } = require('telegraf')
-// //const fs = require('fs')
-require('dotenv').config()
-const { Telegraf, Markup } = require('telegraf')
-const { v4: uuidv4 } = require('uuid');
+
+import { Telegraf } from 'telegraf';
+import { v4 as uuidv4 } from 'uuid';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const token = process.env.BOT_TOKEN
 if (token === undefined) {
